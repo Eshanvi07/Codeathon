@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Top Bar */
+.topbar {
+  background: #002147;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 15px 30px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar nav {
+  position: absolute;
+  right: 20px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 150px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  top: 30px;
+  z-index: 100;
+}
+
+.dropdown-content li a {
+  color: black;
+  padding: 8px 12px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background: #eee;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: url('https://images.unsplash.com/photo-1562774053-701939374585') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Sections */
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+.section.dark {
+  background: #002147;
+  color: white;
+}
+
+/* Grid Layout */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box, .card {
+  padding: 15px;
+  background: #eee;
+  color: black;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.card p {
+  margin-top: 5px;
+}
+
+.box:hover, .card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #002147;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
